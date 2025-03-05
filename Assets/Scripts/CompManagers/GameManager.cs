@@ -60,13 +60,16 @@ public class GameManager : MonoBehaviour
         selectedPlotItem = PlotItemTypeEnum.None;
     }
 
-    private void Start() {
-
-    }
-
-    void Update()
+    public void SetPlotItem(int ID)
     {
-
+        switch (ID)
+        {
+            case 0: playerSelectedPlotItem = PlotItemTypeEnum.Blueberry; break;
+            case 1: playerSelectedPlotItem = PlotItemTypeEnum.Tomato; break;
+            case 2: playerSelectedPlotItem = PlotItemTypeEnum.Cow; break;
+            case 3: playerSelectedPlotItem = PlotItemTypeEnum.Strawberry; break;
+            default: playerSelectedPlotItem = PlotItemTypeEnum.None; break;
+        }
     }
 
     public PlotItemTypeEnum CheckPlotItemAvailable()

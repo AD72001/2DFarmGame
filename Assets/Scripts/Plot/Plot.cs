@@ -111,7 +111,7 @@ public class Plot : MonoBehaviour
         }
         else 
         { 
-            Planting();
+            PlayerPlanting();
         }
     }
 
@@ -158,11 +158,11 @@ public class Plot : MonoBehaviour
     {
         if (GameManager.Instance.playerSelectedPlotItem != PlotItemTypeEnum.None) 
         {
-            currentPlotItem = plotItemDictionary[GameManager.Instance.selectedPlotItem].GetComponent<PlotItem>();
+            currentPlotItem = plotItemDictionary[GameManager.Instance.playerSelectedPlotItem].GetComponent<PlotItem>();
 
             if (GameManager.Instance.plotItemAvailable[currentPlotItem.ID] > 0)
             {
-                plotItemDictionary[GameManager.Instance.selectedPlotItem].SetActive(true);
+                plotItemDictionary[GameManager.Instance.playerSelectedPlotItem].SetActive(true);
                 GameManager.Instance.plotItemAvailable[currentPlotItem.ID]--;
                 hasPlant = true;
 
