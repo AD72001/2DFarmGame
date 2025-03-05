@@ -1,0 +1,23 @@
+    ˇˇˇˇ          ÅE{
+    "_money": 700,
+    "_level": 2,
+    "saveLocation": "/GameState.sav",
+    "moneyLeveling": 500,
+    "plotPrice": 500,
+    "harvestProducts": [
+        7,
+        55,
+        16,
+        12
+    ],
+    "plotItemAvailable": [
+        0,
+        0,
+        0,
+        0
+    ],
+    "lastPlayTime": "3/5/2025 10:57:52 AM",
+    "isLoading": false,
+    "selectedPlotItem": 4,
+    "playerSelectedPlotItem": 0
+}
